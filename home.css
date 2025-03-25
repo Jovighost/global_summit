@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* media query for mobile devices */
+@media (min-width: 375px) and (max-width: 667px){
+    .mobile_menu p{
+    padding: 2px 12px;
+    background-color: black;
+    margin-right: 90%;
+    
+    }
+
+    .mobile_menu {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        position: absolute;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;    
+         
+           
+         }
+
+         .main{
+            background-image: url(./images/Assets/images/second-background.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40vh;
+            
+           
+            
+         }
+          
+        .text{
+            padding-bottom: 32px;
+            padding-top: 10px;
+        }
+
+        .text h1{
+            padding-top: 10px;
+        }
+
+        .container{
+            background-color: #fff;
+            padding-bottom: 30px;
+            height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container p{
+            
+            text-align: center;
+            width: 100%; 
+        }
+
+        .contain{
+            background-color: #f7f7f8;
+            background-size: 30%;
+            height: 100px; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contain h4{
+          font-size: 15px;
+         text-align: center;
+          width: 100%;
+        }
+
+        .contain p{
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            padding-top: 25px;
+        }
+
+        .down-contain{
+            background-color: #fff;
+            height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .down-contain h2{
+            text-align: center;
+            font-size: 20px;
+            width: 60%;
+            
+            
+            
+        }
+
+        .down-contain p{
+             color: #858585;
+             padding-top: 40px;
+             padding-inline: 15px;
+        
+        }
+
+        
+
+        .global{
+            height:180px;
+            border-top: 2px solid #e0e2e7;
+            border-bottom: 2px solid #e0e2e7;
+           
+        }
+        
+
+        .global-pic{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            height: 120px;
+        }
+
+        .cards{
+            height: 150px;
+            background-color: #fff;
+            border-top: 2px solid #e0e2e7;
+            margin-top: 20px;
+           
+        }
+
+        .date{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+        }
+
+        .date span{
+            width: 60%;
+            border-top: 2px solid #e0e2e7;
+            border-bottom: 2px solid #e0e2e7;
+            
+        }
+
+        .down-container1 h3 {
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+        }
+
+         .down-container1 p{
+            display: flex;
+            justify-content: center;
+            font-size: lighter;
+            padding: 0 10px 10px 30px;
+            padding-top: 30px;
+
+        }
+
+        .images{
+         width:100%
+        
+        }
+
+        .images-container{
+            position: relative
+        }
+    
+      .image{
+        width: 95%;
+        margin: 10px;
+        height: 150px;
+        object-fit: cover;
+        
+      }   
+         .image-text{
+            position: absolute;
+            top: 1px;
+            color: white;
+            background-color: red;
+            height: 150px;
+            width: 95%;
+            margin: 10px;
+            opacity: 0.8; 
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            
+            
+         }
+
+        
+         .partner{
+            background-color: #414246;
+            height: 170px;
+         }
+
+         .title{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            padding-bottom: 15px;
+            font-weight: lighter;
+         }
+
+        
+         .partners ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+         }
+
+         .footer{
+            background-color: #fff;
+            height: 70px;
+         }
+
+         .company ul{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            list-style: none;
+            gap: 20px;
+
+
+         }
+
+         .hdn{
+            font-size: 18px;
+            font-weight: bolder;
+            padding-left: 10px;
+         }
+
+        
+
+    }
+
+    
