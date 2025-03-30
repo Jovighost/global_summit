@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capston</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <link rel="stylesheet" href="./CSS/desktop.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header>
-       <nav>
-        <div class="menu">
+       
+        <div class="menu" id="menu">
             <div class="mobile_menu">
                 <p></p>
                 <p></p>
                 <p></p>
             </div>
         </div>
-        </nav>
-        <nav>
+        
+        
         <div class="desktop_nav">
             <nav>
                 <ul>
@@ -33,25 +35,26 @@
 
          <div class="navbar">
             <div class="logo">
-                <img src="./images/Assets/images/logo.svg" alt="">
+               <a href="/"><img  src="./images/Assets/images/logo.svg" alt=""></a> 
                </div>
-            <ul>
-                <li class="text"><a href=""></a>About</li>
-                <li><a href=""></a>Program</li>
-                <li><a href=""></a>Join</li>
-                <li><a href=""></a>Sponsor</li>
-                <li><a href=""></a>News</li>
-                <li class="end"><a href=""></a>CC Campaign</li>
+            <ul class="nav-items">
+                <li class="text"><a href="/">Home</a></li>
+                <li class=""><a href="./about.html">About</a></li>
+                <li><a href="" class="text">Program</a></li>
+                <li><a href="" class="text">Join</a></li>
+                <li><a href="" class="text">Sponsor</a></li>
+                <li><a href="" class="text">News</a></li>
+                <li class="end"><a href="">CC Campaign</a></li>
             </ul>
            </div>
-       </nav>
+       
     </header>
       
     <main>
         <section class="main-container">
             <article class="sub-container">
        <p class="hero-text">"Hello! Sharing world"</p> 
-        <h1>Web Developement Global mentorship Experience</h1>
+        <h1 >Web Developement Global mentorship Experience</h1>
 
         <p class="text-container1">
             We invite aspiring and junior web developers from all around the globe to join a vibrant community, find support and encouragement for the journey in tech, and to build an inclusive and visionary future for the industry..</p>
@@ -109,9 +112,13 @@
                  <article class="main-cards">
                <!--Cards here-->
                 </article>
-                <button class="btn" onclick="">
+                <button class="btn " id="btn-more">
                     <span class="Btn">MORE</span>
                     <span><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+                <button class="btn-hide " id="btn-hide">
+                    <span class="Btn">HIDE</span>
+                    <span><i class="fa-solid fa-angle-up"></i></span>
                 </button>
                 
     

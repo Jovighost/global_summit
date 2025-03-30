@@ -1,3 +1,19 @@
+// header
+const Menu = document.getElementById('menu');
+const nav = document.querySelector('.nav-items');
+
+
+Menu.addEventListener('click', () => {
+    if (nav.style.visibility === 'visible') {
+        nav.style.visibility = 'hidden';
+        
+    } else {
+        nav.style.visibility = 'visible';
+       
+    }
+});
+
+
 
 const cards=[
     {
@@ -46,21 +62,44 @@ const cards=[
 ]
 
 
-const card = document.querySelector(".main-cards")
 
+// more button and function
 
-const mapCard = cards.map((card, index)=>(
-    `
-     <article class="speaker-container" key='${index}'>
-                    <div><img src="${card.image}" alt="#"></div>
+const btnMore = document.getElementById('btn-more');
+const btnHide = document.getElementById('btn-hide');
+const card1 = document.querySelector('.main-cards');
+
+card1.innerHTML = cards.map((card, index)=>{
+    let className = '';
+   if(index !== 0 && index !== 1){
+     className = 'hide-card';
+   }
+
+   btnMore.addEventListener('click', ()=>{
+   const hideCard = document.querySelectorAll('.hide-card');
+   for(i = 0; i< hideCard.length; i++){
+    hideCard[i].style.display = 'flex';
+   }
+   btnHide.style.display = 'block';
+   btnMore.style.display = 'none'
+   })
+
+   btnHide.addEventListener('click', ()=>{
+    const hideCard = document.querySelectorAll('.hide-card');
+    for(i = 0; i< hideCard.length; i++){
+     hideCard[i].style.display = 'none';
+    }
+    btnHide.style.display = 'none';
+    btnMore.style.display = 'block'
+    })
+    return `
+<article class="speaker-container ${className}" key='${index}'>
+                    <div><img class="speaker-image" src="${card.image}" alt="#"></div>
                     <div>
                         <h4 class="author-name">${card.name}</h4>
                     <p class="desc">${card.title}</p>
                     <p>${card.description}</p>
                     </div>
                 </article>
-    
-    ` 
-))
-
-card.innerHTML=mapCard;
+    `
+}).join('')
